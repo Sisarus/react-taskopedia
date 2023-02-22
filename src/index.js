@@ -35,9 +35,9 @@ root.render(
     <Header/>
     <MainBody/>
     <div className='row'> Students Enrolled </div>
-    <Student name="Koi Kisll" experience={2}/>
-    <Student name="Lisa Polo" experience={5}/>
-    <Student name="Sini Koi" experience={6}/>
+    <Student name="Koi Kisll" experience={2} headshot="https://api.lorem.space/image/face?w=150&h=150"/>
+    <Student name="Lisa Polo" experience={5} headshot="https://api.lorem.space/image/face?w=150&h=150"/>
+    <Student name="Sini Koi" experience={6} headshot="https://api.lorem.space/image/face?w=150&h=150"/>
     <Footer/>
   </div>
 );
