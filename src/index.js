@@ -1,27 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './CSS/style.css';
+import Header from './header';
+import Students from './students'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
-function MainHeader(){
-  return <h1 className='text-primary'>REACT PRACTICE</h1>
-}
-
-
-function SubHeader(){
-  return <p style={subHeaderStyle}>This will be an exciting!</p>
-}
-
-function Header(){
-  return(
-    <div>
-      <MainHeader></MainHeader>
-      <SubHeader></SubHeader>
-    </div>
-  )
-}
-
 
 function MainBody() {
   
@@ -44,27 +27,6 @@ function MainBody() {
   )
 }
 
-function Students(){
-  const fullName = "Ersko Tee";
-  const programmingExp = 2;
-  return (
-    <div className='container p-4'>
-      <div className='row'>
-        Students Enrolled
-      </div>
-      <div className='row border'>
-        <div className='col-2'>
-          <img src={`https://ui-avatars.com/api/?name=${fullName}`}></img>
-        </div> 
-        <div className='col-10'>
-          {fullName}<br/>
-          Programming Experience {programmingExp} years
-        </div> 
-      </div>
-    </div>
-  )
-}
-
 function Footer() {
   return <p style={{color:'gray',backgroundColor:'black'}}>Happy Coding!</p>
 }
@@ -76,9 +38,3 @@ root.render(
     <Footer/>
   </div>
 );
-
-
-const subHeaderStyle = {
-  color: "blueviolet",
-  backgroundColor: 'lightgray'
-}
