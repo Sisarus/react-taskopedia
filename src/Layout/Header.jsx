@@ -1,4 +1,4 @@
-import logo from "./images/react.png";
+import logo from "../images/react.png";
 
 function MainHeader(){
   return (
@@ -10,7 +10,7 @@ function MainHeader(){
 }
 
 function SubHeader(){
-  return <p style={subHeaderStyle}>This will be an exciting!</p>
+  return <p className="text-center" style={subHeaderStyle}>This will be an exciting!</p>
 }
 
 export default function Header(){

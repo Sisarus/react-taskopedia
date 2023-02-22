@@ -1,3 +1,6 @@
+import Student from './Student';
+import StudentReview from './StudentReview';
+
 export default function MainBody() {
   
   const whatWeWillLearn = "React JS";
@@ -15,6 +18,14 @@ export default function MainBody() {
       {/* <div>
         Enter Task:{} <input maxLength={5} readOnly={false} placeholder="Alisa"></input>
       </div> */}
+      <div className='container row'> Students Enrolled </div>
+      <Student name="Koi Kisll" experience={2} headshot="https://api.lorem.space/image/face?w=150&h=150">
+        <StudentReview/>
+      </Student>
+      <Student name="Lisa Polo" experience={5} headshot="https://api.lorem.space/image/face?w=150&h=150">
+        <StudentReview/>
+      </Student>
+      <Student name="Sini Koi" experience={6} headshot="https://api.lorem.space/image/face?w=150&h=150"/>
     </div>
   )
 }
