@@ -7,8 +7,9 @@ function MainHeader(){
   return <h1>REACT PRACTICE</h1>
 }
 
+
 function SubHeader(){
-  return <p>This will be an exciting!</p>
+  return <p style={subHeaderStyle}>This will be an exciting!</p>
 }
 
 function Header(){
@@ -34,7 +35,7 @@ function MainBody() {
 }
 
 function Footer() {
-  return <p>Happy Coding!</p>
+  return <p style={{color:'gray',backgroundColor:'black'}}>Happy Coding!</p>
 }
 root.render(
   <div>
@@ -43,3 +44,9 @@ root.render(
     <Footer/>
   </div>
 );
+
+
+const subHeaderStyle = {
+  color: "blueviolet",
+  backgroundColor: 'lightgray'
+}
