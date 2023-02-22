@@ -2,6 +2,10 @@ import Student from './Components/Student/Student';
 import StudentReview from './Components/Student/StudentReview';
 
 const MainBody = () => {
+  
+  const whatWeWillLearn = "React JS";
+  const lectureCount = 3;
+
   return (
     <div style={{minHeight:"70vh"}}>
       <p>We will learn {whatWeWillLearn} by buildin TaskOPedia!<br/>
