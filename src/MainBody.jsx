@@ -4,7 +4,7 @@ export default function MainBody() {
   const lectureCount = 3;
 
   return (
-    <div>
+    <div style={{minHeight:"70vh"}}>
       <p>We will learn {whatWeWillLearn} by buildin TaskOPedia!<br/>
       Total Lecture - {lectureCount}
       </p>

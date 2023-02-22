@@ -4,12 +4,12 @@ import './CSS/style.css';
 import Header from './Header';
 import Student from './Student'
 import Footer from './Footer';
-import MainBody from '../MainBody';
+import MainBody from './MainBody';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <div>
+  <div style={{backgroundColor: "black", color: "gray"}}>
     <Header/>
     <MainBody/>
     <div className='container row'> Students Enrolled </div>
