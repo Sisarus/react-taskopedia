@@ -1,11 +1,7 @@
 import Student from './Components/Student/Student';
 import StudentReview from './Components/Student/StudentReview';
 
-export default function MainBody() {
-  
-  const whatWeWillLearn = "React JS";
-  const lectureCount = 3;
-
+const MainBody = () => {
   return (
     <div style={{minHeight:"70vh"}}>
       <p>We will learn {whatWeWillLearn} by buildin TaskOPedia!<br/>
@@ -29,3 +25,5 @@ export default function MainBody() {
     </div>
   )
 }
+
+export default MainBody;

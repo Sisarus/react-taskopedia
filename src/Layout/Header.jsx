@@ -13,7 +13,7 @@ function SubHeader(){
   return <p className="text-center" style={subHeaderStyle}>This will be an exciting!</p>
 }
 
-export default function Header(){
+const Header = () =>{
   return(
     <div>
       <MainHeader></MainHeader>
@@ -21,6 +21,8 @@ export default function Header(){
     </div>
   )
 }
+
+export default Header;
 
 const subHeaderStyle = {
   color: "blueviolet",
