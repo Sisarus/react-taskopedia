@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './CSS/style.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -23,13 +24,22 @@ function Header(){
 
 
 function MainBody() {
+  
+  const whatWeWillLearn = "React JS";
+  const lectureCount = 3;
+
   return (
     <div>
-      <p>We will learn React by buildin TaskOPedia!</p>
+      <p>We will learn {whatWeWillLearn} by buildin TaskOPedia!<br/>
+      Total Lecture - {lectureCount}
+      </p>
       <ul>
         <li>Dance</li>
         <li>Eat dinner</li>
       </ul>
+      {/* <div>
+        Enter Task:{} <input maxLength={5} readOnly={false} placeholder="Alisa"></input>
+      </div> */}
     </div>
   )
 }
