@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 function MainHeader(){
-  return <h1>REACT PRACTICE</h1>
+  return <h1 className='text-primary'>REACT PRACTICE</h1>
 }
 
 
